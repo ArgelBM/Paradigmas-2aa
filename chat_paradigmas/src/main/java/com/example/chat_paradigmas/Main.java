@@ -6,6 +6,10 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.concurrent.BlockingQueue;
+import java.util.concurrent.LinkedBlockingQueue;
+import java.util.concurrent.Semaphore;
 
 public class Main extends Application {
 
@@ -19,10 +23,11 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws IOException {
         stage = primaryStage;
-        ScreamControl.iniciar();
+        ControllerDaTela.iniciar();
     }
 
     public static void main(String[] args){
+    	
         launch();
     }
 }

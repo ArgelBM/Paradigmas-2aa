@@ -13,8 +13,9 @@ public class TelaInicialController {
 
     @FXML
     void iniciar(ActionEvent event) throws IOException {
-
-        ScreamControl.telasDeChat();
+    		String text = quantidade.getText();
+    		int value = Integer.parseInt(text);
+        ControllerDaTela.telasDeChat(value);
 
     }
 
